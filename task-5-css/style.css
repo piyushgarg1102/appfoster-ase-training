@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.rightPanel {
+    width: 25%;
+    background-color: #5942C0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: white;
+}
+.leftPanel {
+    width: 75%;
+    padding: 0.7cm;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 4rem;
+
+}
+body {
+   
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    position: relative;
+}
+.right img{
+    height: 15vh;
+    width: 15vh;
+    object-fit: cover;
+}
+.main{
+    margin: 0 15rem;
+    height: 100vh;
+}
+
+.right-div-1{
+    padding: 2rem 3rem;
+    background-color: #483599;
+}
+.right-div-2{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+.right img{
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.4rem 0;
+}
+.subscript{
+    color: rgba(255, 255, 255, 0.479);
+    display: inline-block;
+    font-size: 0.9rem;
+}
+.rd2{
+    margin:12px;
+}
+.icon{
+    margin-right:5px;
+}
+.right-div-3{
+    padding: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.edu{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.msc{
+    margin-bottom: 5px;;
+}
+.right-div-4{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.leftheading{
+    color: #2D7688;
+    margin-top:  3rem;
+    font-size: 1.5rem;
+   
+}
+.leftheading2{
+    color: #2D7688;
+    margin-top:  3rem;
+}
+.lft{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.left-divs{
+    display: flex;
+    justify-content: space-between;
+}
+.uperspace{
+    margin-top: 2rem;}
+
+
+.lftmargin{
+    /* margin-left: 32rem; */
+}
+.leftpanelicon{
+    margin-right: 0.5rem
+}
+.clrchange{
+    color: #616A77;
+}
+.rcc{
+    color: rgba(255, 255, 255, 0.479)
+}
+.bar{
+    height: 0.9rem;
+    width: 25vw;
+    background-color: #676ACD;
+    margin-left: 3.3rem;
+    margin-top: 2.1rem;
+    
+}
+.baar{
+    display: flex;
+  
+}
+.bar2{
+    height: 1rem;
+    width: 15vw;
+    background-color: #676ACD;
+    margin-left:8rem;
+    margin-top: 1.rem;
+  
+    
+}
