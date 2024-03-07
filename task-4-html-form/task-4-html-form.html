@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Form</title>
+    <style>
+        
+        form {
+            background-color: #f0f8ff; 
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Patient Form</h1>
+    <form action="#" method="POST">
+        <!-- Primary Details Section -->
+        <fieldset>
+            <legend>Primary Details</legend>
+            <label for="medicare_no">Medicare No.:</label>
+            <input type="text" id="medicare_no" name="medicare_no" required><br>
+
+            <label for="valid_till_month">Valid Till (MM/YYYY):</label>
+            <input type="month" id="valid_till_month" name="valid_till_month" required><br>
+
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="Mr.">Mr.</option>
+                <option value="Mrs.">Mrs.</option>
+                <option value="Miss">Miss</option>
+                <option value="Dr.">Dr.</option>
+            </select><br>
+
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+
+            <label for="middle_name">Middle Name:</label>
+            <input type="text" id="middle_name" name="middle_name"><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+
+            <label for="pref_name">Preferred Name:</label>
+            <input type="text" id="pref_name" name="pref_name"><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="sex">Sex:</label>
+            <input type="radio" id="male" name="sex" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female" required>
+            <label for="female">Female</label><br>
+
+            <label for="family_name">Family Name:</label>
+            <input type="text" id="family_name" name="family_name" required><br>
+        </fieldset>
+
+        <!-- Contact Details Section -->
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label for="home_phone">Home Phone:</label>
+            <input type="tel" id="home_phone" name="home_phone"><br>
+
+            <label for="work_phone">Work Phone:</label>
+            <input type="tel" id="work_phone" name="work_phone"><br>
+
+            <label for="mobile_phone">Mobile Phone:</label>
+            <input type="tel" id="mobile_phone" name="mobile_phone" required><br>
+
+            <label for="fax">Fax:</label>
+            <input type="tel" id="fax" name="fax"><br>
+
+            <label for="emergency_phone">Emergency Phone:</label>
+            <input type="tel" id="emergency_phone" name="emergency_phone" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        </fieldset>
+
+        <!-- Address Details Section -->
+        <fieldset>
+            <legend>Address Details</legend>
+            <label>Residential Address:</label><br>
+            <label for="residential_address1">Address 1:</label>
+            <input type="text" id="residential_address1" name="residential_address1" required><br>
+        
+            <label for="residential_address2">Address 2:</label>
+            <input type="text" id="residential_address2" name="residential_address2"><br>
+        
+            <label for="residential_suburb">Suburb:</label>
+            <input type="text" id="residential_suburb" name="residential_suburb" required>
+            <label for="residential_state">State:</label>
+            <select id="residential_state" name="residential_state" required>
+                <option value="Haryana">Haryana</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select><br>
+        
+            <label for="residential_postal_code">Postal Code:</label>
+            <input type="text" id="residential_postal_code" name="residential_postal_code" required>
+            <label for="residential_country">Country:</label>
+            <input type="text" id="residential_country" name="residential_country" required><br>
+        
+            <br>
+        
+            <label>Mailing Address (if different):</label><br>
+            <input type="checkbox" id="same_as_residential" name="same_as_residential" onclick="copyResidentialAddress()">
+            <label for="same_as_residential">Same as Residential Address</label><br>
+        
+            <label for="mailing_address1">Address 1:</label>
+            <input type="text" id="mailing_address1" name="mailing_address1"><br>
+        
+            <label for="mailing_address2">Address 2:</label>
+            <input type="text" id="mailing_address2" name="mailing_address2"><br>
+        
+            <label for="mailing_suburb">Suburb:</label>
+            <input type="text" id="mailing_suburb" name="mailing_suburb">
+            <label for="mailing_state">State:</label>
+            <select id="mailing_state" name="mailing_state">
+                <option value="Haryana">Haryana</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+            </select><br>
+        
+            <label for="mailing_postal_code">Postal Code:</label>
+            <input type="text" id="mailing_postal_code" name="mailing_postal_code">
+            <label for="mailing_country">Country:</label>
+            <input type="text" id="mailing_country" name="mailing_country"><br>
+        </fieldset>
+
+        <!-- Additional Details Section -->
+        <fieldset>
+            <legend>Additional Details</legend>
+            <label for="ihi_number">IHI Number:</label>
+            <input type="text" id="ihi_number" name="ihi_number" required><br>
+
+            <label for="number_status">Number Status:</label>
+            <input type="text" id="number_status" name="number_status" required><br>
+
+            <label for="record_status">Record Status:</label>
+            <input type="text" id="record_status" name="record_status" required><br>
+
+            <label for="last_updated">Last Updated:</label>
+            <input type="datetime-local" id="last_updated" name="last_updated" required><br>
+        </fieldset>
+
+        <!-- Submit and Clear Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <script>
+        function copyResidentialAddress() {
+            if (document.getElementById('same_as_residential').checked) {
+                document.getElementById('mailing_address1').value = document.getElementById('residential_address1').value;
+                document.getElementById('mailing_address2').value = document.getElementById('residential_address2').value;
+                document.getElementById('mailing_suburb').value = document.getElementById('residential_suburb').value;
+                document.getElementById('mailing_state').value = document.getElementById('residential_state').value;
+                document.getElementById('mailing_postal_code').value = document.getElementById('residential_postal_code').value;
+                document.getElementById('mailing_country').value = document.getElementById('residential_country').value;
+            } else {
+                document.getElementById('mailing_address1').value = '';
+                document.getElementById('mailing_address2').value = '';
+                document.getElementById('mailing_suburb').value = '';
+                document.getElementById('mailing_state').value = '';
+                document.getElementById('mailing_postal_code').value = '';
+                document.getElementById('mailing_country').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
