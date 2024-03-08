@@ -1,0 +1,16 @@
+ 1014  cp directory1/file1.txt directory2/copied_file.txt\n
+ 1015  cd directory2
+ 1016  ls
+ 1017  cd ..
+ 1018  mv directory2/file2.txt directory1/moved_file.txt
+ 1019  cd directory1
+ 1020  ls
+ 1021  cd ..
+ 1022  cd directory2
+ 1023  ls
+ 1024  cd ..
+ 1025  ls
+ 1026  rm -r directory2
+ 1027  ls
+ 1028  curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location
+ 1029  curl https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch -L -I | grep location | awk '{ print "https://developer.mozilla.org" $2 }'
