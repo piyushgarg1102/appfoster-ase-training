@@ -1,0 +1,27 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 --1. \
+--INSERT INTO Customers values (6,"Piyush", "Garg", 23, "INDIA");\
+\
+--2.\
+--INSERT INTO Customers values (7,"RAJ", "SHARMA", 21, "INDIA"),(8,"RAHUL", "SINGH", 22, "CHINA"),--(9,"VIKAS", "GUPTA", 40, "INDIA");\
+\
+--3.\
+--SELECT country,count(*) AS customers FROM Customers GROUP BY country; \
+\
+--4.\
+--SELECT * FROM Orders WHERE amount BETWEEN 100 and 500;\
+\
+--5.\
+--select first_name,last_name from Customers inner join Orders on          	    Customers.customer_id=Orders.customer_id where Orders.item="Keyboard";\
+\
+--6.\
+--select country from Customers inner join Shippings on Customers.customer_id=Shippings.customer where     Shippings.status="Pending";\
+\
+--7.\
+SELECT customer_id, COUNT(order_id) FROM Orders GROUP BY customer_id;}
