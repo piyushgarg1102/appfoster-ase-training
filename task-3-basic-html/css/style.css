@@ -1,0 +1,103 @@
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                box-sizing: border-box;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .main{
+                margin: 7rem 10rem;
+                padding: 3vh 5vw;
+            }
+
+            .first{
+                display: flex;
+                justify-content: space-evenly;
+                padding-bottom: 5rem;
+                
+            }
+
+            .first .left{
+                padding: 2rem;
+                background-color: #EEEEEE;
+            }
+
+            .left h1{
+                font-size: 4rem;
+            }
+            .left h3{
+                font-size: 1.5rem;
+                padding-bottom: 2rem;
+            }
+
+            .right img{
+                height: 40vh;
+                width: 40vh;
+                object-fit: cover;
+            }
+
+            .left p i{
+                padding: 0.5rem;
+            }
+
+            /* Second Div */
+
+            .second{
+                background-color: #EEEEEE;
+                margin: 0 10.5rem;
+                padding: 2rem;
+            }
+
+            .second-inner-div{
+                display: flex;
+                padding: 0 2rem;
+            }
+
+            .second-inner-div h3{
+                padding: 3rem 5rem 3rem 3rem;
+            }
+
+            .second-inner-div p{
+                padding: 2rem;
+                text-align: justify;
+            }
+
+            .second-inner-div .bulletins{
+                padding: 0 5rem;
+            }
+
+            .second-inner-div .description{
+                padding-top: 2rem;
+            }
+
+            .line1{
+                font-size: 1.5rem;
+            }
+            .ggcolour{
+                color: green
+            }
+
+            .third {
+                margin: 0 10.5rem;
+                padding: 2rem;
+            }
+            .third h2{
+                padding: 2rem;
+            }
+            .third table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .third table th,
+            .third table td {
+                padding: 1.5rem;
+                border: 1px solid black;
+                text-align: left;
+            }
+            .third table th {
+                background-color: #f2f2f2;
+            }
+           
