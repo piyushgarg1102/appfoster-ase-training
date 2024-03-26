@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.user-listing {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2%;
+}
+
+.tableheading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-listing-item {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(213, 212, 212);
+  padding-top: 1.5%;
+}
+
+.data-heading {
+  font-weight: 600;
+}
+
+.data-div {
+  display: flex;
+  gap: 0.313rem;
+}
